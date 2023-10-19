@@ -11,7 +11,7 @@ int r, c, n;
 void sparseInput(){
 	printf("\nEnter The Total Number Of Elements: ");
 	scanf("%d", &n);
-	printf("\nEnter The Number Of Rows ANd Columns: ");
+	printf("\nEnter The Number Of Rows And Columns: ");
 	scanf("%d %d", &r, &c);
 	
 	s[0].row = r;
