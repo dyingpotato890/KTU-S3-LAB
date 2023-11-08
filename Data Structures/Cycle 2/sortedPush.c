@@ -17,11 +17,11 @@ void push(int elem){
 	else{
 		int auxStack[n], temptop=-1;
 
-		while(elem > stack[topS] && topS!=-1)
+		while(elem > stack[topS] && topS != -1)
 			auxStack[++temptop] = stack[topS--];
 		stack[++topS] = elem;
 
-		while(temptop>-1)
+		while(temptop > -1)
 			stack[++topS] = auxStack[temptop--];
 	}
 }
