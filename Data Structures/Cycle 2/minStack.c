@@ -9,13 +9,6 @@ void display(){
 		printf("%d\n", stack[i]);	
 }
 
-void minDisplay(){
-	if (top2 == -1)
-		printf("\nStack Empty And No Mininmal Element!");
-	else
-		printf("Min Value: %d\n",auxStack[top2]);
-}
-
 void push(){
 	if (top1 == n)
 		printf("\nEnd Of Stack!");
@@ -35,11 +28,11 @@ void push(){
 	}
 }
 
-void peak(){
-	if (top1 == -1)
+void peak(int top, int s[n]){
+	if (top == -1)
 		printf("\nStack Empty!");
 	else
-		printf("Peak Value: %d\n",stack[top1]);
+		printf("Peak Value: %d\n", s[top]);
 }
 
 void pop(){
@@ -80,10 +73,10 @@ void main(){
 				pop();
 				break;
 			case 3:
-				peak();
+				peak(top1, stack);
 				break;
 			case 4:
-				minDisplay();
+				peak(top2, auxStack);
 				break;
 			case 5:
 				display();
