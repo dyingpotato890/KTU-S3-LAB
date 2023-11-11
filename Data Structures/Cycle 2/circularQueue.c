@@ -33,7 +33,6 @@ void dequeue(){
         else
             front = (front + 1) % MAX;
     }
-    
 }
 
 void display(){
