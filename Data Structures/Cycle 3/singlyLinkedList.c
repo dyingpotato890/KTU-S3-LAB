@@ -31,7 +31,7 @@ void insertAfter(){
     	struct node* ptr = head;
 
         int item;
-        printf("\nEnter The Element Before Which You Want To Insert: ");
+        printf("\nEnter The Element After Which You Want To Insert: ");
         scanf("%d", &item);
 
         while (ptr != NULL && ptr -> data != item){
