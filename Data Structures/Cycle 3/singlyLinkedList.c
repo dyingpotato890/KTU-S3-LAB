@@ -26,6 +26,19 @@ void insertFront(){
     head = new;
 }
 
+void insertEnd(){   
+    struct node* new = createNode();
+
+	if (head != NULL){
+    	struct node* ptr = head;
+    	while (ptr -> link != NULL)
+        	ptr = ptr -> link;
+    	ptr -> link = new;
+    }
+    else
+    	insertFront();
+}
+
 void insertAfter(){
     if (head != NULL){
     	struct node* ptr = head;
@@ -246,10 +259,11 @@ void insertMenu(){
 	
     while (menuInsert == 1){
         printf("\n\t\t ============= INSERT MENU =============");
-        printf("\n\t\t 1) After A Value");
-        printf("\n\t\t 2) Before A Value");
-        printf("\n\t\t 3) At Any Position");
-        printf("\n\t\t 4) Exit");
+        printf("\n\t\t 1) At The End");
+        printf("\n\t\t 2) After A Value");
+        printf("\n\t\t 3) Before A Value");
+        printf("\n\t\t 4) At Any Position");
+        printf("\n\t\t 5) Exit");
         printf("\n\t\t =====================================\n");
   
         int o;
@@ -258,18 +272,22 @@ void insertMenu(){
   
         switch(o){
             case 1:
-                insertAfter();
+                insertEnd();
                 display();
                 break;
             case 2:
-                insertBefore();
+                insertAfter();
                 display();
                 break;
             case 3:
-                insertAny();
+                insertBefore();
                 display();
                 break;
             case 4:
+                insertAny();
+                display();
+                break;
+            case 5:
                 menuInsert = 0;
                 break;
             default:
