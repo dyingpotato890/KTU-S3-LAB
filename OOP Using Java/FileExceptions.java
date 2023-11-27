@@ -1,7 +1,3 @@
-/*
-write a java program to read formn a file and write to a file by handling all the file related exceptions. 
-*/
-
 import java.io.*;
 
 class FileExceptions {
@@ -37,10 +33,3 @@ class FileExceptions {
         inputFile();
     } 
 }
-
-/*
-Content Stored!
-File Contents:
-
-Hello World!
- */
