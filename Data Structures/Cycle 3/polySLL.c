@@ -67,7 +67,7 @@ void add(){
             ptrR -> expo = ptr2 -> expo;
             ptr2 = ptr2 -> link;
         }
-        else if (ptr1 -> expo > ptr1 -> expo) {
+        else if (ptr1 -> expo > ptr2 -> expo) {
             ptrR -> coeff = ptr1 -> coeff;
             ptrR -> expo = ptr1 -> expo;
             ptr1 = ptr1 -> link;
