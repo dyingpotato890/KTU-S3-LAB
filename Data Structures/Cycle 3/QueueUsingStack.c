@@ -42,19 +42,6 @@ void push(int item){
     top = new;
 }
 
-void dequeue(){
-	if (front -> link == NULL){
-		push(front -> data);
-		front = rear = NULL;
-	}
-	else{
-		ptr = front;
-		push(ptr -> data);
-		front = ptr -> link;
-		free(ptr);
-	}
-}
-
 void displayStack(){
 	if (top == NULL)
         printf("\nStack Empty!");
@@ -88,8 +75,11 @@ void deRev(){
 		printf("\nNothing To Reverse!");
 	else{
 		displayQueue();
-		while (front != NULL)
-			dequeue();
+		ptr = front;
+		while (ptr != NULL){
+			push(ptr -> data);
+			ptr = ptr -> link;
+		}
 		displayStack();
 	}
 }
@@ -99,7 +89,7 @@ void main(){
     
     printf("\n\t\t ============= MENU =============");
     printf("\n\t\t 1) Enqueue");
-    printf("\n\t\t 2) Dequeue & Reverse");
+    printf("\n\t\t 2) Reverse");
     printf("\n\t\t 3) Display Queue");
     printf("\n\t\t 4) Exit");
     printf("\n\t\t ================================\n");
