@@ -89,7 +89,7 @@ void display(){
         printf("\nQueue Data: \n");
 
         while(ptr != NULL){
-            printf("%d --> ", ptr -> data);
+            printf("%d <--> ", ptr -> data);
             ptr = ptr -> next;
         }
         printf("NULL\n");
