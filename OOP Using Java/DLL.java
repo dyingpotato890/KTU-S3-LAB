@@ -59,7 +59,7 @@ class DLL{
 			System.out.println("List Empty!");
 		else{
 			node ptr = head;
-			System.out.println("\nList Contents:");
+			System.out.println("List Contents:");
 			while (ptr != null){
 				System.out.print(ptr.data + " --> ");
 				ptr = ptr.next;
@@ -69,7 +69,7 @@ class DLL{
 	}
 	
 	public static void main(String args[]){		
-		int flag = 1, o;
+		int flag = 1;
 		
 		System.out.println("======== MENU ========");
 		System.out.println("1) Insert");
@@ -79,6 +79,7 @@ class DLL{
 		System.out.println("======================");
 		
 		while(flag == 1){
+			int o;
 			System.out.print("\nEnter Your Option: ");
 			o = s.nextInt();
 			
