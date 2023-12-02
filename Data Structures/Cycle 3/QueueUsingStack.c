@@ -103,6 +103,7 @@ void main(){
                 enqueue();
                 break;
             case 2:
+		top = NULL;
                 deRev();
                 break;
             case 3:
