@@ -107,16 +107,13 @@ void display(){
         printf("\nQueue Empty!");
     else{
         struct node* ptr = head;
-        printf("\nQueue Data: \n");
-        
+        printf("\nQueue Data: \n");        
 		printf("%d", ptr -> data);
 		ptr = ptr -> next;
         while(ptr != head){
-        	if (ptr != head)
-            	printf(" --> ");
+            printf(" --> ");
             printf("%d", ptr -> data);
-            ptr = ptr -> next;
-            
+            ptr = ptr -> next; 
         }
     }
 }
