@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.Scanner;
 
 class node{
@@ -24,9 +23,7 @@ class DLL{
 			head = ptr = newNode;
 			head.next = newNode.prev = null;	
 		}
-		else{
-			node prevTemp = ptr;
-			
+		else{	
 			while (ptr.next != null)
 				ptr = ptr.next;
 			
