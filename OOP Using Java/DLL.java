@@ -39,14 +39,13 @@ class DLL{
 		if (head == null)
 			System.out.println("List Empty!");
 		else{
-			node prevTemp = ptr;
-			while (ptr.next != null){
-				prevTemp = ptr;
-				ptr = ptr.next;
-			}
-			if (ptr == prevTemp)
+			while (ptr.next != null)
+				ptr = ptr.next;		
+			System.out.println("Deleted Element: " + ptr.data);
+			if (ptr == head)
 				ptr = head = null;
-			prevTemp.next = null;
+			else
+				ptr.prev.next = null;
 		}
 		ptr = head;
 	}
