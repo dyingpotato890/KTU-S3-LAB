@@ -28,7 +28,6 @@ void display(int n, int start){
 }
 
 int add(int a, int b, int c){
-	int cout;
 	while((a < p1len) && (b < (p1len + p2len))){
 		if (p[a].expo == p[b].expo){
 			p[c].expo = p[a].expo;
@@ -51,7 +50,6 @@ int add(int a, int b, int c){
 		p[c].expo = p[b].expo;
 		p[c++].coeff = p[b++].coeff;
 	}
-
 	return c;
 }
 
