@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int arr[50] = {}, n, search;
+int arr[50], n, search;
 
 void display(int arr[]){
 	for (int i = 0; i < n; i++)
