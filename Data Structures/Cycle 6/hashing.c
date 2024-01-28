@@ -43,9 +43,12 @@ void insertChaining(struct HashTable *hashTable, int key) {
 
 void insertLinearProbing(struct HashTable *hashTable, int key) {
     int index = key % SIZE;
-    while (hashTable -> arrayLinearProbing[index] != -1)
+    while (hashTable -> arrayLinearProbing[index] != -1 && index!=(key-1)%SIZE)
         index = (index + 1) % SIZE;
-    hashTable -> arrayLinearProbing[index] = key;
+    if(hashTable->arrayLinearProbing[index]==-1)
+        hashTable -> arrayLinearProbing[index] = key;
+    else
+        printf("Element Cannot Be Hashed\n");
 }
 
 void displayChaining(struct HashTable *hashTable) {
