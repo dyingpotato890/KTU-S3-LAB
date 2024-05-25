@@ -86,5 +86,4 @@ This folder contains the following programs:
 
 #
 
-Each folder contains few additional practice programs as well.
-Feel free to explore the folders and use the programs as needed for your lab sessions.
+Each section contains few additional practice programs in the ```Lab Exam``` folder. Feel free to explore the folders and use the programs as needed for your lab sessions.
