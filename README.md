@@ -51,5 +51,40 @@ This folder contains the following programs:
     - Graph Traversal Algorithms (Using Matrix & List)
     - Hashing
 
+## OOP Using Java
 
+This folder contains the following programs:
+
+- Basic Programs In Java:
+    - Frequency Of Characters In A String
+    - Matrix Multiplication
+    - Palindrome (String)
+
+- Exception Handling And Multithreading:
+    - Exception Handling
+    - Multithreading
+    - Thread Synchronization
+
+- Files And IO Management Methods:
+    - File Handling
+    - File Exception Handling
+    - String Tokenizer
+
+- Object Oriented Programming:
+    - Inheritance
+    - Method Overloading
+    - Garbage Collection
+
+- Standard Searcing And Sorting:
+    - Binary Search
+    - Quick Sort
+    - Doubly Linked List
+
+- Graphics Programming:
+    - Calculator - GUI
+    - Traffic Light - GUI
+
+#
+
+Each folder contains few additional practice programs as well.
 Feel free to explore the folders and use the programs as needed for your lab sessions.
