@@ -1,61 +1,91 @@
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-class TrafficLight extends JFrame implements ActionListener {
-    String msg = "";
+public class TrafficLight extends JFrame implements ActionListener {
+    private JPanel lightPanel;
+    private JTextField messageField;
+    private Color currentColor;
 
-    private JLabel label;
-    private JTextField display;
-    private JRadioButton r1, r2, r3;
-    private ButtonGroup bg;
-    private Container c;
+    private JRadioButton redRadioButton;
+    private JRadioButton yellowRadioButton;
+    private JRadioButton greenRadioButton;
 
     public TrafficLight() {
-        setLayout(new FlowLayout());
-        c = getContentPane();
+        setTitle("Traffic Light GUI");
+        setSize(300, 500);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout());
 
-        label = new JLabel("Traffic Light");
-        display = new JTextField(10);
+        currentColor = Color.RED;
 
-        r1 = new JRadioButton("RED");
-        r2 = new JRadioButton("GREEN");
-        r3 = new JRadioButton("YELLOW");
-        bg = new ButtonGroup();
-        c.add(label);
-        c.add(r1);
-        c.add(r2);
-        c.add(r3);
+        lightPanel = new JPanel() {
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                g.setColor(Color.BLACK);
+                g.fillRect(100, 50, 100, 300);
 
-        c.add(display);
-        bg.add(r1);
-        bg.add(r2);
-        bg.add(r3);
+                g.setColor(currentColor == Color.RED ? Color.RED : Color.GRAY);
+                g.fillOval(125, 75, 50, 50);
+
+                g.setColor(currentColor == Color.YELLOW ? Color.YELLOW : Color.GRAY);
+                g.fillOval(125, 175, 50, 50);
+
+                g.setColor(currentColor == Color.GREEN ? Color.GREEN : Color.GRAY);
+                g.fillOval(125, 275, 50, 50);
+            }
+        };
+        lightPanel.setPreferredSize(new Dimension(300, 400));
+        lightPanel.setBackground(Color.WHITE);
+
+        redRadioButton = new JRadioButton("Red");
+        yellowRadioButton = new JRadioButton("Yellow");
+        greenRadioButton = new JRadioButton("Green");
+
+        ButtonGroup group = new ButtonGroup();
+        group.add(redRadioButton);
+        group.add(yellowRadioButton);
+        group.add(greenRadioButton);
+
+        JPanel radioButtonPanel = new JPanel();
+        radioButtonPanel.add(redRadioButton);
+        radioButtonPanel.add(yellowRadioButton);
+        radioButtonPanel.add(greenRadioButton);
+
+        messageField = new JTextField();
+        messageField.setEditable(false);
+        messageField.setHorizontalAlignment(JTextField.CENTER);
+
+        redRadioButton.addActionListener(this);
+        yellowRadioButton.addActionListener(this);
+        greenRadioButton.addActionListener(this);
+
+        add(lightPanel, BorderLayout.CENTER);
+        add(radioButtonPanel, BorderLayout.SOUTH);
+        add(messageField, BorderLayout.NORTH);
         
-        r1.addActionListener(this);
-        r2.addActionListener(this);
-        r3.addActionListener(this);
-        setSize(400, 400);
         setVisible(true);
-        c.setBackground(Color.pink);
     }
-    public void actionPerformed(ActionEvent ie) {
-        msg = ie.getActionCommand();
-        if (msg.equals("RED")) {
-            c.setBackground(Color.RED);
-            display.setText(msg + " :TURN ON");
-        } 
-        else if (msg.equals("GREEN")) {
-            c.setBackground(Color.GREEN);
-            display.setText(msg + ":TURN ON");
-        } 
-        else if (msg.equals("YELLOW")) {
-            c.setBackground(Color.YELLOW);
-            display.setText(msg + " :TURN ON");
+
+    public void changeColor(Color color, String message) {
+        currentColor = color;
+        messageField.setText(message);
+        lightPanel.repaint();
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        Object src = e.getSource();
+        if (src == yellowRadioButton) {
+            changeColor(Color.YELLOW, "READY!");
+        } else if (src == greenRadioButton) {
+            changeColor(Color.GREEN, "GO!");
+        } else if (src == redRadioButton) {
+            changeColor(Color.RED, "STOP!");
         }
     }
-    public static void main(String args[]) {
-        TrafficLight light = new TrafficLight();
-        light.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+    public static void main(String[] args) {
+        new TrafficLight();
     }
 }
