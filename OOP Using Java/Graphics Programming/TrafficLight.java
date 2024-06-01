@@ -4,13 +4,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TrafficLight extends JFrame implements ActionListener {
-    private JPanel lightPanel;
-    private JTextField messageField;
-    private Color currentColor;
+    JPanel lightPanel;
+    JTextField messageField;
+    Color currentColor;
 
-    private JRadioButton redRadioButton;
-    private JRadioButton yellowRadioButton;
-    private JRadioButton greenRadioButton;
+    JRadioButton redRadioButton;
+    JRadioButton yellowRadioButton;
+    JRadioButton greenRadioButton;
 
     public TrafficLight() {
         setTitle("Traffic Light GUI");
