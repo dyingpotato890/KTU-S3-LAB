@@ -12,12 +12,12 @@ The repository is divided into two main sections:
 
 This folder contains the following programs:
 - Cycle 1:
-    - Sparse Representation
-    - Sparse Sum
-    - Sparse Symmetry
-    - Sparse Transpose
-    - Polynomial Addition
-    - Polynomial Evaluation
+    - [Sparse Representation](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%201/sparseRepresentation.c)
+    - [Sparse Sum](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%201/sparseSum.c)
+    - [Sparse Symmetry](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%201/sparseSymmetry.c)
+    - [Sparse Transpose](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%201/sparseTranspose.c)
+    - [Polynomial Addition](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%201/polyAdd.c)
+    - [Polynomial Evaluation](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%201/polyEvaluation.c)
 
 - Cycle 2:
     - Infix To Postfix
@@ -42,7 +42,18 @@ This folder contains the following programs:
 
 - Cycle 4:
     - Searching Algorithms
+        - [Linear Search](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%204/Searching%20Algorithms/linearSearch.c)
+        - [Binary Search](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%204/Searching%20Algorithms/binarySearch.c)
+        - [Combined](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%204/Searching%20Algorithms/searching.c)
+          
     - Sorting Algorithms
+        - [Bubble Sort](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%204/Sorting%20Algorithms/bubbleSort.c)
+        - [Insertion Sort](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%204/Sorting%20Algorithms/insertionSort.c)
+        - [Selection Sort](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%204/Sorting%20Algorithms/selectionSort.c)
+        - [Quick Sort](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%204/Sorting%20Algorithms/quickSort.c)
+        - [Merge Sort](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%204/Sorting%20Algorithms/mergeSort.c)
+        - [Heap Sort](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%204/Sorting%20Algorithms/heapSort.c)
+        - [Combined](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%204/Sorting%20Algorithms/sorting.c)
 
 - Cycle 5:
     - Tree Traversal Algorithms
