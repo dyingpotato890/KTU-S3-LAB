@@ -1,6 +1,6 @@
 # S3-Lab
 
-This repository is dedicated to storing programs necessary for the Data Structures and Object-Oriented Programming lab sessions conducted in Semester 3 for KTU students.
+This repository is dedicated to storing programs necessary for the Data Structures and Object-Oriented Programming lab sessions conducted in Semester 3 for KTU students (2019 Syllabus).
 
 ## Overview
 
