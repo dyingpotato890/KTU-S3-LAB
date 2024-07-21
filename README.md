@@ -56,13 +56,19 @@ This folder contains the following programs:
         - [Combined](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%204/Sorting%20Algorithms/sorting.c)
 
 - Cycle 5:
-    - Delete An Node In A Tree
+    - Delete A Node In A Tree
     - Tree Traversal Algorithms
     - [Combined](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%205/trees.c)
     
 - Cycle 6:
     - [Graph Traversal Algorithms (Using Matrix & List)](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%206/graph.c)
     - [Hashing (Chaining & Linear Probing)](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Cycle%206/hashing.c)
+
+ - Additional Programs:
+    - [Array Rotation](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Lab%20Exam/arrayRotation.c)
+    - [Decimal To Hexadecimal](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Lab%20Exam/deciToHexa.c)
+    - [Removing Duplicate Elements (SLL)](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Lab%20Exam/duplicateElements.c)
+    - [Positive & Negative Numbers (SLL)](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/Data%20Structures/Lab%20Exam/posNegSLL.c)
 
 ## OOP Using Java
 
@@ -97,6 +103,11 @@ This folder contains the following programs:
     - [Calculator - GUI](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/OOP%20Using%20Java/Graphics%20Programming/Calculator.java)
     - [Traffic Light - GUI](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/OOP%20Using%20Java/Graphics%20Programming/TrafficLight.java)
 
+- Additional Programs:
+    - [Replacing Palindromes with Asterisks](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/OOP%20Using%20Java/Lab%20Exam/LabExam1.java)
+    - [Concurrent Message Printing with GUI Input](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/OOP%20Using%20Java/Lab%20Exam/LabExam2.java)
+    - [GUI for Importing and Calculating Marks](https://github.com/dyingpotato890/KTU-S3-LAB/blob/main/OOP%20Using%20Java/Lab%20Exam/LabExam4.java)
+      
 #
 
 Each section contains few additional practice programs in the ```Lab Exam``` folder. Feel free to explore the folders and use the programs as needed for your lab sessions.
