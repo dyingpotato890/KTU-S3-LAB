@@ -29,21 +29,11 @@ int postfixEval(){
 			char op = postfix[i];
 			
 			switch(op){
-				case '+':
-					result = x + y;
-					break;
-				case '-':
-					result = x - y;
-					break;
-				case '*':
-					result = x * y;
-					break;
-				case '/':
-					result = x / y;
-					break;
-				case '^':
-					result = pow(x,y);
-					break;
+				case '+': result = x + y; break;
+				case '-': result = x - y; break;
+				case '*': result = x * y; break;
+				case '/': result = x / y; break;
+				case '^': result = pow(x,y); break;
 			}
 			push(result);
 		}
